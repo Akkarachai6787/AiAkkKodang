@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<title>Sitting Bear</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="BEAR.css">
+<link rel="shortcut icon" href="test.png" />
+<link href="https://fonts.googleapis.com/css2?family=Itim&family=Kanit&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<body>
+  <div id="toptopnav">
+    <a href="index.html" class="active"><img src="logoAKK.png" id="logo"></a>
+    <!-------------------------nav----------------------------->
+    <div class="topnav" id="myTopnav">
+      <a href="#home" class="active"></a>
+      <span class="none list" id="curt">TH</span>
+      <input type="checkbox" class="none change" id="check" onclick="checkchange()">
+      <span class="none list" id="cur">EN</span>
+      <a href="#about" class="list">About</a>
+      <a href="index.html" class="list">Home</a>
+      <a href="index.html" class="listres">Home</a>
+      <a href="#about" class="listres">About</a>
+      <a class="listreslang"><span class="res" id="cur cur2">EN</span>
+        <input type="checkbox" class=" change" id="check2" onclick="checkchange2()">
+        <span class="res" id="curt curt2">TH</span></a>
+      <a href="javascript:void(0);" class="icon " onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+  </div>
+
+  <!-------------------------parallax----------------------------->
+  <section class="para">
+    <div class="reg">
+      <img src="BB.png" id="BB">
+    </div>
+    <div id="reg600">
+      <img src="BB600.png" id="BB600">
+    </div>
+  </section>
+  <img src="aug.png" id="aug" class="rotate">
+  <img src="aug600.png" id="aug600" class="rotate">
+
+  <div class="row">
+    <div class="main about" id="about">
+      <h2 id="topic">About</h2>
+      <p id="conEn">Have you ever had a teddy bear Have you ever thought that
+        when you are not with it, what will it do It will go somewhere or sit
+        bored until you come back. This is why Sitting Bear NFT was born.</p>
+      <p id="conTh">คุณเคยมีตุ๊กตาหมีไหมครับ แล้วคุณเคยคิดไหมว่า เวลาที่คุณไม่ได้อยู่กับเขา
+        เขาจะทำอะไร จะไปที่ไหน หรือไปนั่งเบื่อจนกว่าคุณจะกลับมา นี่แหละครับ คือเหตุผลที่ทำให้
+        เกิด Sitting Bear NFT </p>
+    </div>
+
+    <div class="side connect">
+      <img src="bear.gif" id="bear">
+    </div>
+  </div>
+
+  <div class="footer">
+    <p id="conEn">Let's sit with a teddy bear at
+      <span id="conlink">
+        <a href="https://paras.id/collection/sitting-bear-by-aiakk6787near"><img src="paras.png" id="linkcon"></a>
+        <a href="https://twitter.com/AiAkkKodang"><img src="Twitter.png" id="linkcon"></a>
+        <a href="https://discord.gg/CKpt6mkBf5"><img src="discord.png" id="linkcon"></a>
+      </span>
+    </p>
+    <span id="reslink">
+      <a href="https://paras.id/collection/sitting-bear-by-aiakk6787near"><img src="paras.png" id="linkcon"></a>
+        <a href="https://twitter.com/AiAkkKodang"><img src="Twitter.png" id="linkcon"></a>
+        <a href="https://discord.gg/CKpt6mkBf5"><img src="discord.png" id="linkcon"></a>
+    </span>
+  </div>
+
+  <i class="fa fa-chevron-circle-up" id="myBtn" onclick="topFunction()" title="Go to top"></i>
+
+
+  <!--------------------------------to top-------------------------->
+  <script>
+    function myFunction() {
+      x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+        x.style.position = "fixed"
+      } else {
+        x.className = "topnav";
+      }
+    }
+  </script>
+
+  <!---------------------------------change--------------------------->
+  <script>
+    function checkchange() {
+      var tog = document.getElementById('check');
+      var th = document.getElementById('conTh');
+      var en = document.getElementById('conEn');
+      var cur = document.getElementById('cur');
+      var curt = document.getElementById('curt');
+      if (tog.checked == true) {
+        th.style.display = "block";
+        en.style.display = "none";
+        curt.style.color = "#21E6C1";
+        cur.style.color = "white";
+      } else {
+        th.style.display = "none";
+        en.style.display = "block";
+        cur.style.color = "#21E6C1";
+        curt.style.color = "white";
+      }
+    }
+  </script>
+
+  <!---------------------------------change--------------------------->
+  <script>
+    function checkchange2() {
+      var tog = document.getElementById('check2');
+      var th = document.getElementById('conTh');
+      var en = document.getElementById('conEn');
+      if (tog.checked == true) {
+        th.style.display = "block";
+        en.style.display = "none";
+      } else {
+        th.style.display = "none";
+        en.style.display = "block";
+      }
+    }
+  </script>
+
+  <!--------------------------------parallax-------------------------->
+  <!-- <script>
+    let BB = document.getElementById('BB');
+
+    window.addEventListener('scroll', function () {
+      let value = window.scrollY;
+      BB.style.paddingRight = value * 0.8 + 'px';
+    })
+  </script> -->
+
+  <!--------------------------------parallax-------------------------->
+  <!-- <script>
+    let BB600 = document.getElementById('BB600');
+
+window.addEventListener('scroll', function () {
+  let value = window.scrollY;
+  BB600.style.paddingRight = value * 0.8 + 'px';
+})
+  </script> -->
+
+  <!--------------------------------totop-------------------------->
+  <script>
+    //Get the button
+    var mybutton = document.getElementById("myBtn");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function () { scrollFunction() };
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+  </script>
+</body>
+
+</html>

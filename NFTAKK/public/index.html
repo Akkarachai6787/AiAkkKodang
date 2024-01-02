@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<title>Ai-Akk's Kodang</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="nft.css">
+<link rel="shortcut icon" href="logoAKK.png" />
+<link href="https://fonts.googleapis.com/css2?family=Itim&family=Kanit&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<body>
+  <div id="toptopnav">
+    <a href="index.html" class="active"><img src="logoAKK.png" id="logo"></a>
+    <!-------------------------nav----------------------------->
+    <div class="topnav" id="myTopnav">
+      <a href="#home" class="active"></a>
+      <span class="none list" id="curt">TH</span>
+      <input type="checkbox" class="none change" id="check" onclick="checkchange()">
+      <span class="none list" id="cur">EN</span>
+      <a href="#sur" class="list">Survey</a>
+      <a href="#about" class="list">About</a>
+      <a href="#about" class="listres">About</a>
+      <a href="#sur" class="listres">Survey</a>
+      <a class="listreslang"><span class="res" id="cur cur2">EN</span>
+        <input type="checkbox" class=" change" id="check2" onclick="checkchange2()">
+        <span class="res" id="curt curt2">TH</span></a>
+      <a href="javascript:void(0);" class="icon " onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+  </div>
+
+  <!-------------------------parallax----------------------------->
+  <section class="para">
+    <div class="reg">
+    <img src="cloud.png" id="cloud">
+    <img src="mountain.png" id="mountain">
+    <img src="aiakk.png" id="Akk">
+    <img src="left.png" id="left">
+    <img src="right.png" id="right"></div>
+    <div id="reg600">
+      <img src="cloud600.png" id="cloud600">
+      <img src="mountain600.png" id="mountain600">
+      <img src="aiakk600.png" id="Akk600">
+      <img src="left600.png" id="left600">
+      <img src="right600.png" id="right600">
+    </div>
+  </section>
+  <div class="what" id="about">
+    <h2 id="topic">About<img src="me.png" id="me"></h2>
+    <p id="conEn">Welcome to Ai-Akk's Kodang. <br>Hello, I'm Akkarachai Pawongjit. This website
+      is like a warehouse that keeps the work that I have created. So I wish you all a
+      happy survey in my warehouse, <br>Ai-Akk's Kodang.</p>
+    <p id="conTh">ยินดีต้อนรับสู่ไอ้อัคโกดังครับ <br>สวัสดีครับ ผมชื่อ อัครชัย พะวงจิตร ครับ
+      สำหรับเว็บไซต์นี้เปรียบเสมือน
+      โกดังของผมที่เก็บรวบรวมผลงานต่าง ๆ ที่ผมได้สร้างสรรค์มาไว้ในโกดังแห่งนี้ครับ
+      แล้วผมก็ขอให้ทุกคนมีความสุขกับการเดินสำรวจโกดัง
+      ของผมนะครับ <br>ไอ้อัคโกดัง</p>
+  </div>
+
+  <div class="sur" id="sur">
+    <h2 id="topic">Survey</h2>
+    <div class="product">
+
+      <br>
+      <!-------------------p1----------------------->
+      <div class="pbox">
+        <div class="pimg">
+          <a href="BEAR.html">
+            <img src="test.png">
+            <div class="overlay-up">
+              <span class="text-up" id="de">more details</span>
+            </div>
+          </a>
+        </div>
+        <div class="pde">
+          <a href="BEAR.html">
+            <div class="pname">Sitting Bear NFT</div></a>
+          <div class="link">
+            <a href="https://paras.id/collection/sitting-bear-by-aiakk6787near"><img src="paras.png" id="link"></a>
+            <a href="https://twitter.com/AiAkkKodang"><img src="Twitter.png" id="link"></a>
+            <a href="https://discord.gg/CKpt6mkBf5"><img src="discord.png" id="link"></a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <i class="fa fa-chevron-circle-up" id="myBtn" onclick="topFunction()" title="Go to top"></i>
+
+
+  <!--------------------------------to top-------------------------->
+  <script>
+    function myFunction() {
+      x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+        x.style.position = "fixed"
+      } else {
+        x.className = "topnav";
+      }
+    }
+  </script>
+
+  <!---------------------------------change--------------------------->
+  <script>
+    function checkchange() {
+      var tog = document.getElementById('check');
+      var th = document.getElementById('conTh');
+      var en = document.getElementById('conEn');
+      var cur = document.getElementById('cur');
+      var curt = document.getElementById('curt');
+      if (tog.checked == true) {
+        th.style.display = "block";
+        en.style.display = "none";
+        curt.style.color = "#FDC57B";
+        cur.style.color = "white";
+      } else {
+        th.style.display = "none";
+        en.style.display = "block";
+        cur.style.color = "#FDC57B";
+        curt.style.color = "white";
+      }
+    }
+  </script>
+
+  <!---------------------------------change--------------------------->
+  <script>
+    function checkchange2() {
+      var tog = document.getElementById('check2');
+      var th = document.getElementById('conTh');
+      var en = document.getElementById('conEn');
+      if (tog.checked == true) {
+        th.style.display = "block";
+        en.style.display = "none";
+      } else {
+        th.style.display = "none";
+        en.style.display = "block";
+      }
+    }
+  </script>
+
+  <!--------------------------------parallax-------------------------->
+  <!-- <script>
+    let cloud = document.getElementById('cloud');
+    let text = document.getElementById('Akk');
+    let lefttt = document.getElementById('left');
+    let righttt = document.getElementById('right');
+
+    window.addEventListener('scroll', function () {
+      let value = window.scrollY;
+      cloud.style.marginRight = value * 2 + 'px';
+      lefttt.style.marginLeft = value * 0.5 + 'px';
+      righttt.style.marginRight = value * 0.3 + 'px';
+    })
+  </script> -->
+
+  <!--------------------------------parallax-------------------------->
+  <!-- <script>
+    let cloud600 = document.getElementById('cloud600');
+    let text600 = document.getElementById('Akk600');
+    let lefttt600 = document.getElementById('left600');
+    let righttt600 = document.getElementById('right600');
+
+    window.addEventListener('scroll', function () {
+      let value = window.scrollY;
+      cloud600.style.marginRight = value * 2 + 'px';
+      lefttt600.style.marginRight = value * 0.5 + 'px';
+      righttt600.style.marginlt = value * 0.3 + 'px';
+    })
+  </script> -->
+
+  <!--------------------------------totop-------------------------->
+  <script>
+    //Get the button
+    var mybutton = document.getElementById("myBtn");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function () { scrollFunction() };
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+  </script>
+</body>
+
+</html>
